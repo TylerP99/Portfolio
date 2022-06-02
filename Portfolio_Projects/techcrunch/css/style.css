@@ -1,0 +1,305 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+
+
+/*=========================*/
+/*         LAYOUT          */
+/*=========================*/
+html {
+    font-size: 62.5%;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body {
+    padding-top: 1.5rem;
+}
+
+
+/* Navigation/Header Layout */
+header {
+    background: #fff;
+    height: 100vh;
+    position: fixed;
+    width: 14%;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 60%;
+}
+header .logo-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20%;
+}
+
+header .nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    height: 75%;
+}
+
+/* SEARCH BUTTON STYLES */
+/* Button Sizing */
+header .nav-items .search-mod {
+    height: 11%;
+    position: relative;
+    font-size: 2rem;
+}
+header .nav-items .search-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Button Styling Toggles */
+header .nav-items .search-off {
+    background: inherit;
+    color: #333;
+}
+header .nav-items .search-on {
+    background: #333;
+    color: #fff;
+}
+
+header .nav-items .search-text {
+    font-size: 2rem;
+}
+header .nav-items .search-text-off {
+    color: #313131;
+}
+header .nav-items .search-text-on {
+    color: #fff;
+}
+
+/* Form Styling */
+header .search-form {
+    border: 1px solid #1eb56c;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+}
+.hidden {
+    display: none;
+}
+header #search-input {
+    height: 100%;
+    font-size: 2rem;
+}
+
+/* NAV MENU CATEGORY STYLING */
+header .nav-items ul {
+    height: 89%;
+}
+header li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 12.5%;
+}
+
+/*==================================*/
+/*      MAIN CONTENT LAYOUT         */
+/*==================================*/
+
+#primary {
+    width: 100%;
+    padding-left: 15%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+
+#sponsered {
+    width: 20%;
+}
+section > p {
+    font-size: 3rem;
+}
+
+/*==================================*/
+/*      Top Articles                */
+/*==================================*/
+#catcher {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 2%;
+}
+#main-article {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+#main-article h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#article-list {
+    width: 40%;
+}
+
+#article-list h3{
+    font-size: 3.25rem;
+    font-weight: bold;
+}
+#article-list li {
+    border-bottom: 1px solid gray;
+    padding: 3% 0;
+}
+#article-list li:last-child {
+    border-bottom: none;
+}
+
+/*==================================*/
+/*      THE LATEST ARTICLE LIST     */
+/*==================================*/
+
+.latest {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.latest > h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+
+    margin-bottom: 1.5rem;
+}
+
+
+.latest article {
+    border-top: 1px solid rgb(190, 190, 190);
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+}
+.latest article > * {
+    width: 30%;
+}
+.latest .title {
+    display: flex;
+    flex-direction: column;
+}
+.latest .title h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.latest p {
+    color: #777;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+footer {
+    border-top: 2px solid #BEBEBE;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 15% 0 15%;
+
+    font-size: 2rem;
+}
+footer div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .footer-info {
+    display: flex;
+}
+footer .footer-info > li {
+    width: 33%;
+}
+
+footer #socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    width: 20%;
+}
+
+#socials li {
+    width: 50%;
+}
+
+footer a {
+    color: #777;
+    font-size: 1.6rem;
+
+    text-decoration: none;
+}
+
+
+
+/*=========================*/
+/*         STYLES          */
+/*=========================*/
+
+/* NAV STYLES */
+header a {
+    color: #313131;
+    font-size: 2rem;
+    text-decoration: none;
+}
+header a:hover {
+    color: #18b26a;
+}
+.tcp{
+    color: #fdd046;
+    font-weight: bold;
+}
+
+
+.holder{
+    width: 385px;
+    height: 205px;
+}
+
+span > a {
+    color: #515151;
+    font-size: 1.625rem;
+    text-decoration: none;
+    line-height: 2rem;
+}

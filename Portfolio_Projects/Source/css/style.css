@@ -1,0 +1,253 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body > :not(header) {
+  width: 80%;
+}
+
+main {
+  width: 100%;
+}
+header nav{
+  border: 1px solid blue;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .link-list {
+  width: 50%;
+}
+header nav .main-logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+header nav a {
+  color: #000;
+  font-size: 2rem;
+  text-decoration: none;
+}
+main section {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 0 5% 0;
+}
+main .left,main .right {
+  width: 25%;
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  text-align: center;
+
+  width: 50%;
+  padding: 5% 0 5% 0;
+}
+
+#info-graphic{
+  display: flex;
+  padding: 5% 0 5% 0;
+} 
+#info-graphic > *{
+  width: 50%;
+}
+#info-graphic #info-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+#features{
+  display: flex;
+  padding: 5% 0 5% 0;
+}
+#features > * {
+  width: 50%;
+}
+#features #feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#features #feature-list > li{
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 90%;
+  padding: 0 0 5% 0;
+}
+footer #foot-head {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer #columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ========= General UL Layouts ========= */
+
+.link-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  color: #000;
+
+  font-size: 5rem;
+}
+
+h2 {
+  color: #000;
+
+  font-size: 4rem;
+}
+
+h4 {
+  color: #777;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+
+
+p {
+  font-size: 1.5rem;
+}
+
+.btn1 {
+  background: #0095cf;
+  border-radius: 5%;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+
+/*========== Figure Designs ==========*/
+.gray {
+  background: #777;
+}
+.figure-a{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 30rem;
+  width: 70rem;
+
+  box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+.figure-a .left {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: 100%;
+}
+
+.box-a-1 {
+  border-radius: 25px;
+  height: 5rem;
+  width: 20rem;
+}
+.box-a-2 {
+  border-radius: 25px;
+  height: 2.5rem;
+  width: 40rem;
+}
+.box-a-3 {
+  border-radius: 25px;
+  height: 2.5rem;
+  width: 25rem;
+}
+.box-a-4 {
+  border-radius: 25px;
+  height: 2.5rem;
+  width: 10rem;
+}
+.circle-graph-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 5px solid #aaa;
+  border-radius: 50%;
+
+  font-size: 8rem;
+
+  height: 20rem;
+  width: 20rem;
+}
+
+.circle-graph-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: red;
+  border-radius: 0 0 100px 0;
+
+  font-size: 8rem;
+
+  height: 20rem;
+  width: 20rem;
+}
