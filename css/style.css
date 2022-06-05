@@ -41,3 +41,48 @@ header li a {
     text-decoration: none;
     color: inherit;
 }
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 87rem;
+}
+.hero-left {
+    width: 50%;
+    height: 87rem;
+}
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 87rem;
+    width: 50%;
+}
+.hero-socials {
+    width: 100%;
+}
+.hero-socials img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.hero-socials > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero-socials li {
+    border: 1px solid;
+    width: 50%;
+}
+.hero-socials a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 2rem;
+}
