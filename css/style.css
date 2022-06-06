@@ -7,6 +7,9 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
+/*==============================*/
+/*    Header Styles - General   */
+/*==============================*/
 header {
     display: flex;
     justify-content: flex-end;
@@ -17,7 +20,6 @@ header {
     background: #300350;
     color: #fff;
 }
-
 header nav {
     display: flex;
     justify-content: space-between;
@@ -36,15 +38,13 @@ header nav a img {
     width: 6rem;
     height: 6rem;
 }
-
 header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    width: 40%;
+    width: 30%;
 }
-
 header li {
     font-size: 2rem;
     font-weight: bold;
@@ -52,11 +52,34 @@ header li {
 
     width: 30%;
 }
-
 header li a {
     text-decoration: none;
     color: inherit;
 }
+
+/*==============================*/
+/*    Footer Styles - General   */
+/*==============================*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 3rem;
+
+    background: #300350;
+    color: #fff;
+    font-size: 1.6rem;
+}
+footer h3 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+footer li {
+    margin-bottom: 0.5rem;
+}
+
 
 main {
     display: flex;
@@ -216,6 +239,13 @@ h4 {
 /*=============================*/
 /*       Contact Me Page       */
 /*=============================*/
+.contact-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 2rem;
+}
 .general-form {
     display: flex;
     flex-direction: column;
@@ -233,16 +263,27 @@ h4 {
     margin-bottom: 1rem;
 }
 
-.contact-body {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 .form-container, .alternate-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
+}
+.form-container h1 {
+    font-size: 5rem;
+}
+.form-container {
+    margin-top: 1rem;
+
+    border-right: 5px solid #eee;
+}
+
+.alternate-freelance {
+    border-bottom: 5px solid #eee;
+}
+.button {
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 1em 2em;
 }
