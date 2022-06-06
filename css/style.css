@@ -4,6 +4,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -18,7 +19,22 @@ header {
 }
 
 header nav {
-    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+header nav a {
+    color: white;
+
+    margin-left: 3rem;
+    width: 3%;
+}
+header nav a img {
+    color: white;
+    width: 6rem;
+    height: 6rem;
 }
 
 header nav ul {
@@ -26,7 +42,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
 
-    width: 100%;
+    width: 40%;
 }
 
 header li {
@@ -49,6 +65,8 @@ main {
     height: 87rem;
 }
 .hero-left {
+    background: #153cb4;
+
     width: 50%;
     height: 87rem;
 }
@@ -61,7 +79,16 @@ main {
     height: 87rem;
     width: 50%;
 }
+.hero-freelancing {
+    background: #f9ac53;
+
+    height: 50%;
+    width: 100%;
+}
 .hero-socials {
+    background: #f62e97;
+    color: #fff;
+    height: 50%;
     width: 100%;
 }
 .hero-socials img{
@@ -76,13 +103,146 @@ main {
     flex-wrap: wrap;
 }
 .hero-socials li {
-    border: 1px solid;
     width: 50%;
 }
 .hero-socials a {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 
     font-size: 2rem;
+
+    padding: 1rem;
+}
+.hero-socials a img {
+    margin-right: 10%;
+}
+.hero-socials .top {
+    border-bottom: 1px solid;
+}
+.hero-socials .bottom {
+    border-top: 1px solid;
+}
+.hero-socials .left {
+    border-right: 1px solid;
+}
+.hero-socials .right {
+    border-left: 1px solid;
+}
+
+
+
+
+
+/*============================*/
+/*    Latest Work Section     */
+/*============================*/
+.latest-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+
+    background: #eee;
+}
+.latest-works h2 {
+    margin: 3rem 0;
+}
+
+.latest-works .catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 80%;
+}
+
+.catalog-item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    background: #fff;
+    margin: 5rem 0;
+    padding: 3rem;
+    height: 600px;
+    width: 30%;
+
+    border: 5px solid;
+    border-radius: 10px;
+}
+.catalog-item img {
+    background: gray;
+    width: 100%;
+}
+.catalog-item ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.catalog-item li {
+    padding: 0.5rem 1rem;
+
+
+    background: #ddd;
+    border-radius: 25px;
+    font-size: 2rem;
+}
+.catalog-item p {
+    font-size: 2rem;
+}
+.catalog-item a {
+    padding: 1rem 2rem;
+
+    border: 3px solid;
+    font-size: 2rem;
+}
+
+
+h2 {
+    font-size: 5rem;
+}
+h4 {
+    font-size: 3rem;
+}
+
+
+
+/*=============================*/
+/*       Contact Me Page       */
+/*=============================*/
+.general-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.general-form section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+.general-form label {
+    margin-bottom: 1rem;
+}
+
+.contact-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-container, .alternate-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
 }
