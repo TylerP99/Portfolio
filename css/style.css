@@ -88,7 +88,8 @@ main {
     height: 87rem;
 }
 .hero-left {
-    background: #153cb4;
+    background: #ddd;
+    border: 10px solid #153cb4;
 
     width: 50%;
     height: 87rem;
@@ -103,14 +104,15 @@ main {
     width: 50%;
 }
 .hero-freelancing {
-    background: #f9ac53;
+    background: #ddd;
+    border: 10px solid #f9ac53;
 
     height: 50%;
     width: 100%;
 }
 .hero-socials {
-    background: #f62e97;
-    color: #fff;
+    background: #ddd;
+    color: #000;
     height: 50%;
     width: 100%;
 }
@@ -120,12 +122,15 @@ main {
 }
 
 .hero-socials > ul {
+    border: 10px solid #f62e97;;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    height: 100%;
 }
 .hero-socials li {
+    height: 33.3333%;
     width: 50%;
 }
 .hero-socials a {
@@ -137,10 +142,17 @@ main {
 
     padding: 1rem;
 }
+.hero-socials a:hover {
+    color: #f62e97;
+}
 .hero-socials a img {
     margin-right: 10%;
 }
 .hero-socials .top {
+    border-bottom: 1px solid;
+}
+.hero-socials .middle {
+    border-top: 1px solid;
     border-bottom: 1px solid;
 }
 .hero-socials .bottom {
