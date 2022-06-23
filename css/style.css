@@ -88,7 +88,7 @@ main {
     height: 87rem;
 }
 .hero-left {
-    background: #ddd;
+    background: #eee;
     border: 10px solid #153cb4;
 
     width: 50%;
@@ -104,14 +104,45 @@ main {
     width: 50%;
 }
 .hero-freelancing {
-    background: #ddd;
+    background: #eee;
     border: 10px solid #f9ac53;
 
     height: 50%;
     width: 100%;
+
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 5fr) 1fr 2fr;
+    grid-template-rows: repeat(2, 2fr) 1fr 2fr 3fr; 
+}
+#hero-freelancing-title {
+    grid-area: 2 / 2 / 3 / 4;
+
+    border-bottom: 4px solid #f9ac53;
+}
+#hero-freelancing-button {
+    grid-area: 4 / 3 / 5 / 5;
+
+    border: 1px solid;
+
+    color: #000;
+
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+}
+#hero-freelancing-button:hover {
+    color: #f9ac53;
+    cursor: pointer;
+}
+#freelancing-right-icon {
+    height: 5rem;
 }
 .hero-socials {
-    background: #ddd;
+    background: #eee;
     color: #000;
     height: 50%;
     width: 100%;
@@ -122,7 +153,7 @@ main {
 }
 
 .hero-socials > ul {
-    border: 10px solid #f62e97;;
+    border: 10px solid #f62e97;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -144,6 +175,8 @@ main {
 }
 .hero-socials a:hover {
     color: #f62e97;
+
+    cursor: pointer;
 }
 .hero-socials a img {
     margin-right: 10%;
@@ -166,7 +199,26 @@ main {
 }
 
 
+/*============================*/
+/*      About Me Section      */
+/*============================*/
 
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 4rem 0;
+}
+#aboutme > * {
+    max-width: 80%;
+}
+
+#aboutme-content {
+    font-size: 2rem;
+    text-indent: 5%;
+}
 
 
 /*============================*/
@@ -183,7 +235,7 @@ main {
     background: #eee;
 }
 .latest-works h2 {
-    margin: 3rem 0;
+    margin: 4rem 0;
 }
 
 .latest-works .catalog {
